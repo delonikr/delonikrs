@@ -1,0 +1,70 @@
+body {
+    background-color: #BB9AB1;
+}
+
+.skill {
+    background-color: #B3A398;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.hero-section {
+    background-image: url('https://i.pinimg.com/564x/40/9f/5b/409f5b2dac40ca7f8c62df6b4be9109a.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    padding: 100px 0;
+}
+
+.section-bg {
+    background-color: #FFEFEF;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.project-card {
+    height: 100%;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.timeline {
+    border-left: 3px solid #A0937D;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -29px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #B3A398;
+}
+
+.btn-primary {
+    background-color: #987D9A;
+    border-color: #987D9A;
+}
+
+.btn-primary:hover {
+    background-color: #987D9A;
+    border-color: #987D9A;
+}
