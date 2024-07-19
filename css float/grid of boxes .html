@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Grid of Boxes</h2>
+<p>Kotak apung berdampingan:</p>
+
+<div class="clearfix">
+  <div class="box" style="background-color:#bbb">
+  <p>Delonik</p>
+  </div>
+  <div class="box" style="background-color:#ccc">
+  <p>Erythrina</p>
+  </div>
+  <div class="box" style="background-color:#ddd">
+  <p>Hydrilla</p>
+  </div>
+</div>
+
+<p><strong>Catatan:</strong>Di sini, kami menggunakan peretasan clearfix untuk menjaga alur tata letak. 
+Kami juga menggunakan properti ukuran kotak untuk memastikan kotak tidak pecah karena bantalan tambahan. 
+Coba hapus kode ini untuk melihat efeknya.</p>
+
+</body>
+</html>

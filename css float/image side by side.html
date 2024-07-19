@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Images Side by Side</h2>
+<p>Gambar mengambang berdampingan:</p>
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="https://asset.kompas.com/crops/7-0zX9IZsHSzcZZz3bMTdMZq-oE=/0x0:1200x800/750x500/data/photo/2021/08/19/611e162fed8b4.jpg" alt="ijen" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_680/v1596034946/blog/kae8scek2ec6prpgnnwg.jpg" alt="sritanjung" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="https://cdn-1.timesmedia.co.id/images/2023/10/28/De-Djawatan.jpg" alt="djawatan" style="width:100%">
+  </div>
+</div>
+
+<p>Perhatikan bahwa kami juga menggunakan peretasan clearfix untuk menangani alur tata letak, 
+dan kami menambahkan properti ukuran kotak untuk memastikan bahwa wadah gambar tidak rusak karena bantalan tambahan. 
+Coba hapus kode ini untuk melihat efeknya.</p>
+
+</body>
+</html>

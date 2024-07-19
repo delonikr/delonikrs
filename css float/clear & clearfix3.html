@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 3px solid #FFC8DD;
+  padding: 5px;
+}
+
+.img1 {
+  float: right;
+}
+
+.img2 {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Without Clearfix</h2>
+
+<p>Gambar ini melayang ke kanan. Ia juga lebih tinggi dari elemen yang memuatnya, sehingga meluap ke luar wadahnya:</p>
+
+<div>
+  <img class="img1" src="https://images.tokopedia.net/img/cache/700/product-1/2017/4/26/638004/638004_aaf0b50d-5077-4ec9-8d4e-e3a9dae7aa30_499_494.jpg" alt="flamboyan" width="170" height="170">
+  Flamboyan (Delonix regia) atau pohon Semarak Api adalah tanaman yang khas dengan pohon besar, dan bunga-bunga merah cerah.
+</div>
+
+<h2 style="clear:right">With New Modern Clearfix</h2>
+<p>Tambahkan peretasan clearfix ke elemen yang memuatnya, untuk memperbaiki masalah ini:</p>
+
+<div class="clearfix">
+  <img class="img2" src="https://images.tokopedia.net/img/cache/700/product-1/2017/4/26/638004/638004_aaf0b50d-5077-4ec9-8d4e-e3a9dae7aa30_499_494.jpg" alt="flamboyan" width="170" height="170">
+  Flamboyan (Delonix regia) atau pohon Semarak Api adalah tanaman yang khas dengan pohon besar, dan bunga-bunga merah cerah.
+</div>
+
+</body>
+</html>
