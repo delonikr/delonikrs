@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div.test {
+  white-space: nowrap; 
+  width: 200px; 
+  overflow: hidden; 
+  border: 1px solid #000000;
+}
+
+div.test:hover {
+  overflow: visible;
+}
+</style>
+</head>
+<body>
+
+<p>Arahkan kursor ke dua div di bawah untuk melihat teks selengkapnya.</p>
+<div class="test" style="text-overflow:ellipsis;">Ini adalah teks panjang yang tidak akan muat di kotak</div>
+<br>
+<div class="test" style="text-overflow:clip;">Ini adalah teks panjang yang tidak akan muat di kotak</div>
+
+</body>
+</html>
+
+

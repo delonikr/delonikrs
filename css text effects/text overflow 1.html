@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+p.test1 {
+  white-space: nowrap; 
+  width: 200px; 
+  border: 1px solid #000000;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+p.test2 {
+  white-space: nowrap; 
+  width: 200px; 
+  border: 1px solid #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+</style>
+</head>
+<body>
+
+<h1>The text-overflow Property</h1>
+<p>Dua paragraf berikut berisi teks panjang yang tidak muat di kotak.</p>
+
+<h2>text-overflow: clip:</h2>
+<p class="test1">Ini adalah teks panjang yang tidak muat di kotak</p>
+
+<h2>text-overflow: ellipsis:</h2>
+<p class="test2">Ini adalah teks panjang yang muat di kotak</p>
+
+</body>
+</html>
+
+
