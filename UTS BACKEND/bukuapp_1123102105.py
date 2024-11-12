@@ -3,7 +3,6 @@ import pymysql
 
 app = Flask(__name__)
 
-# Konfigurasi koneksi database
 db = pymysql.connect(
     host="localhost",
     user="root",
@@ -11,7 +10,6 @@ db = pymysql.connect(
     database="library"
 )
 
-# Endpoint API untuk mendapatkan semua buku (GET)
 @app.route("/api/buku", methods=["GET"])
 def get_all_buku():
     try:
@@ -28,7 +26,6 @@ def get_all_buku():
             "message": str(e)
         }), 500
 
-# Endpoint API untuk mendapatkan buku by ID (GET)
 @app.route("/api/buku/<int:id>", methods=["GET"])
 def get_buku_by_id(id):
     try:
@@ -50,7 +47,6 @@ def get_buku_by_id(id):
             "message": str(e)
         }), 500
 
-# Endpoint API untuk menambah buku (POST)
 @app.route("/api/buku", methods=["POST"])
 def add_buku():
     try:
@@ -96,7 +92,6 @@ def add_buku():
             "message": str(e)
         }), 500
 
-# Endpoint API untuk update buku (PUT)
 @app.route("/api/buku/<int:id>", methods=["PUT"])
 def update_buku(id):
     try:
@@ -150,7 +145,6 @@ def update_buku(id):
             "message": str(e)
         }), 500
 
-# Route untuk web interface tetap sama
 @app.route('/')
 def index():
     with db.cursor() as cursor:
